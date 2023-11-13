@@ -43,6 +43,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install ffmpeg  # For replaygain
+          sudo apt install bash-completion
 
       - name: Test older Python versions with tox
         if: matrix.python-version != '3.x'
